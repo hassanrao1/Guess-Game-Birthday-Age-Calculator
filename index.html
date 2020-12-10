@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>We don't do that here</title>
+  </head>
+  <body>
+    <!-- Guess Number -->
+    <div>
+      <!-- Input1 -->
+      <div>
+        <form onsubmit="return result1()">
+          <input
+            type="text"
+            id="userNum1"
+            maxlength="4"
+            onchange="return showAns()"
+            required
+          />
+          <button>Submit</button>
+          <h3 id="showInp1"></h3>
+          <h3 id="comRes1"></h3>
+        </form>
+      </div>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <!-- Input2 -->
+      <div>
+        <form onsubmit="return result2()">
+          <input type="text" id="userNum2" maxlength="4" required />
+          <button>Submit</button>
+
+          <h3 id="showInp2"></h3>
+          <h3 id="comRes2"></h3>
+        </form>
+      </div>
+    </div>
+    <br />
+    <button onclick="calcAns()">Show Answer</button>
+    <h3 id="finalAns"></h3>
+    <h4 id="ans"></h4>
+
+    <script src="app.js"></script>
+  </body>
+</html>
